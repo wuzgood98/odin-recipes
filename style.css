@@ -1,7 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
 div.container {
   margin-left: 20px;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+img {
+  border-radius: 0.6em;
+  box-shadow: 6px 6px 10px rgb(194, 192, 192), 6px -6px 10px #fff;
+}
+
+.breadcrumb ul {
+  display: flex ;
+  list-style-type: none;
+}
+
+.breadcrumb li::before {
+  content: "\00bb";
+  margin-left: 10px;
+}
+
+.breadcrumb li:first-child::before {
+  content: "";
+}
+
+.breadcrumb > ul > li a:last-child{
+  margin-left: 10px;
+}
+
+.breadcrumb {
+  margin-left: -58px;
+}
+
+.breadcrumb > ul > li a{
+  text-decoration: none;
+  color: black;
+}
+
+.breadcrumb > ul > li a:hover{
+  text-decoration: underline;
+  text-decoration-color: orangered;
+  text-decoration-thickness: 2px;
+}
+
+.ingredients > ul li {
+  list-style: disc;
+  color: orangered;
+}
+
+.ingredients > ul li span{
+  color: black;
+}
+
+ol li {
+  font-weight: 600;
+  color: orangered;
+}
+
+ol li span {
+  color: black;
+  font-weight: 400;
+}
+
+main {
+  width: 50%;
+}
+
+.steps, .ingredients{
+  line-height: 25px;
+}
+
+hr {
+  border: 1px solid rgba(163, 160, 160, 0.294);
+}
+
+.nutrition {
+  text-decoration-color: orangered;
+  color: black;
+}
+
+.nutrition:hover {
+  text-decoration-color: orangered;
+  text-decoration-thickness: 2px;
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+.line-height {
+  line-height: 25px;
 }
